@@ -14,10 +14,14 @@
 <!-- CONTACT -->
 ## Contact
 
-Name: PADAMATI PRANAV SAI
-Email: pranavsaipadamati@gmail.com
-University: IIT Patna
-Dept: Artificial Intelligence and Data science
+- Name: 
+  - PADAMATI PRANAV SAI
+- Email:
+  - pranavsaipadamati@gmail.com
+- University:
+  - IIT Patna
+- Dept:
+  - Artificial Intelligence and Data science
 
 
 
