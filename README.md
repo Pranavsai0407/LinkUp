@@ -17,7 +17,7 @@
 - Name: 
   - PADAMATI PRANAV SAI
 - Email:
-  - pranavsaipadamati@gmail.com
+  - 2201ai49_padamati@iitp.ac.in
 - University:
   - IIT Patna
 - Dept:
