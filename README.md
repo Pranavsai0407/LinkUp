@@ -141,14 +141,17 @@ Make sure you have the following software installed on your local machine:
     cd ./server
     npm install
     ```
-
-3. **Install frontend dependencies**
+3. **Back to Root Directory**
+    ```bash
+    cd ..
+    ```
+4. **Install frontend dependencies**
     ```bash
     cd ./client
     npm install
     ```
 
-4. **Set up environment variables**
+5. **Set up environment variables**
     Create a `.env` file in the `backend` directory and add your configuration details:
     ```
     PORT=5000
