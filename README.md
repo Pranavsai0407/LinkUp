@@ -33,58 +33,47 @@
 
 
 ## Features
-User Authentication
--Registration: Allows users to create an account with email, password, and username.
--Login: Users can log into their accounts with a valid email and password combination.
--Logout: Securely log out from the application, invalidating the JWT token.
-Chat Functionality
--Real-Time Messaging: Instant communication between users via WebSockets.
--Personal Messaging: Private one-on-one chats between users.
--Group Chat Support: Multiple users can join and interact in group chats.
--Emoji Support: Users can add emojis to their messages for expressive conversations.
--Typing Indicators: Show when a user is typing in a chat.
--Online/Offline Status: Track and display the user's presence status.
-AI Chatbot Integration
--Gemini-1.5 Flash API: Users can interact with an AI chatbot for assistance or general conversation.
--Chatbot Suggestions: Provides suggestions or answers to user queries in real-time.
-File Handling
--File Upload: Users can upload and share files and images in chats (via Multer).
--Profile Picture Upload: Upload a profile picture during registration or update it later.
--File Download: Users can easily download shared files directly from the chat.
-Message Management
--Message History: Users can view their chat history, either in personal chats or group conversations.
--Delete Messages: Users can delete their messages from the chat.
--Edit Messages: Allow users to edit their previously sent messages.
-User Profile
--Profile Page: Displays user details like name, email, and profile picture.
--Update Profile: Users can update their profile information and upload a new profile picture.
--Contacts and User List
--Contact List: Users can view a list of their contacts and start conversations.
-Channels (Group Chats)
--Create Channels: Users can create group chats (channels) and add members.
--View Channels: List all channels the user is a part of.
--Manage Channels: Admins of the group chat can add or remove members and manage the chat settings.
-Notifications
--Message Notifications: Real-time notifications for incoming messages.
--Push Notifications: Web push notifications when the user is offline or inactive in the chat.
-Real-Time Features
--Sockets for Real-Time Updates: All chats, typing indicators, and presence status are updated in real-time via Socket.io.
-Security
--JWT Authentication: Protects routes and ensures secure access to resources.
--Password Hashing: All passwords are hashed before being stored in the database for security.
-Additional Features
--Search: Users can search for contacts, group chats, and chat messages.
--Responsive Design: The entire application is fully responsive and optimized for desktop and mobile devices.
--Error Handling: Proper error messages for invalid login, registration, or message send failures.
-
-## About The Project
-
-
-This web application, built using the MERN stack (MongoDB, Express, React, and Node.js), serves as an online judge for algorithm questions. It enables users to practice programming by solving algorithmic challenges. The platform compiles and executes code, testing it against pre-constructed TestCases. 
-
-This application also assigns each user the ability to view their submissions, upload images to their profile section. This platform fosters a community where users can explore each other's profiles and submissions. Additionally, it grants administrators the capability to create and edit problems along with their associated test cases. Currently, it supports four languages: C,C++,Java and Python.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- User Authentication
+ - Registration: Allows users to create an account with email, password, and username.
+ - Login: Users can log into their accounts with a valid email and password combination.
+ - Logout: Securely log out from the application, invalidating the JWT token.
+- Chat Functionality
+ - Real-Time Messaging: Instant communication between users via WebSockets.
+ - Personal Messaging: Private one-on-one chats between users.
+ - Group Chat Support: Multiple users can join and interact in group chats.
+ - Emoji Support: Users can add emojis to their messages for expressive conversations.
+- AI Chatbot Integration
+ - Gemini-1.5 Flash API: Users can interact with an AI chatbot for assistance or general conversation.
+ - Chatbot Suggestions: Provides suggestions or answers to user queries in real-time.
+- File Handling
+ - File Upload: Users can upload and share files and images in chats (via Multer).
+ - Profile Picture Upload: Upload a profile picture during registration or update it later.
+ - File Download: Users can easily download shared files directly from the chat.
+- Message Management
+ - Message History: Users can view their chat history, either in personal chats or group conversations.
+ - Delete Messages: Users can delete their messages from the chat.
+ - Edit Messages: Allow users to edit their previously sent messages.
+- User Profile
+ - Profile Page: Displays user details like name, email, and profile picture.
+ - Update Profile: Users can update their profile information and upload a new profile picture.
+ - Contacts and User List
+ - Contact List: Users can view a list of their contacts and start conversations.
+- Channels (Group Chats)
+ - Create Channels: Users can create group chats (channels) and add members.
+ - View Channels: List all channels the user is a part of.
+ - Manage Channels: Admins of the group chat can add or remove members and manage the chat settings.
+- Notifications
+ - Message Notifications: Real-time notifications for incoming messages.
+ - Push Notifications: Web push notifications when the user is offline or inactive in the chat.
+- Real-Time Features
+ - Sockets for Real-Time Updates: All chats, typing indicators, and presence status are updated in real-time via Socket.io.
+- Security
+ - JWT Authentication: Protects routes and ensures secure access to resources.
+ - Password Hashing: All passwords are hashed before being stored in the database for security.
+- Additional Features
+ - Search: Users can search for contacts, group chats, and chat messages.
+ - Responsive Design: The entire application is fully responsive and optimized for desktop and mobile devices.
+ - Error Handling: Proper error messages for invalid login, registration, or message send failures.
 
 
 
@@ -160,7 +149,7 @@ Make sure you have the following software installed on your local machine:
 6. **Set up environment variables**
     Create a `.env` file in the `frontend` directory and add your configuration details:
     ```env
-    VITE_SERVER_URL="http://localhost.159:5000"
+    VITE_SERVER_URL="http://localhost:5000"
     VITE_SOCKET_URL="http://localhost:3001"
     VITE_API_KEY="Your-Google-AI-API-KEY"
     ```
@@ -179,38 +168,6 @@ Make sure you have the following software installed on your local machine:
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Once the installation is complete, you can start using the platform by navigating to `http://localhost:5173` in your web browser.
-
-- **Login**: Login to your account.
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/login_page.png)
-- **Register Page**: Create a new account.
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/register_page.png)
-- **Homepage(admin)**:
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/home_page_top.png)
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/home_page_bottom.png)
-- **ProblemSet(admin)**: Page Listing all the available problems.
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/problem_set_admin.png)
-- **ProblemDescription**: Page Describing the Problem.
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/problem_page_top.png)
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/problem_page_bottom.png)
-- **Submissions**: Page Listing all user submissions.
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/problem_submissions.png)
-- **Userlist**: Page Listing the users(only visible for admin).
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/users_page_admin.png)
-- **Profile**: Profile Page of users.
-![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/profile_page.png)
-
-Role respective crud functionality has also been provided
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Project Structure
