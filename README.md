@@ -152,7 +152,7 @@ Make sure you have the following software installed on your local machine:
     ```
 
 5. **Set up environment variables**
-    Create a `.env` file in the `backend` directory and add your configuration details:
+    Create a `.env` file in the `server` directory and add your configuration details:
     ```
     PORT=5000
     JWT_KEY="your-jwt-key"
@@ -161,7 +161,7 @@ Make sure you have the following software installed on your local machine:
     ```
 
 6. **Set up environment variables**
-    Create a `.env` file in the `frontend` directory and add your configuration details:
+    Create a `.env` file in the `client` directory and add your configuration details:
     ```env
     VITE_SERVER_URL="http://localhost:5000"
     VITE_SOCKET_URL="http://localhost:3001"
