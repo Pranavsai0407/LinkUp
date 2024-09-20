@@ -11,6 +11,13 @@
 
 
 
+<!-- CONTACT -->
+## Contact
+
+Name: PADAMATI PRANAV SAI
+Email: pranavsaipadamati@gmail.com
+University: IIT Patna
+Dept: Artificial Intelligence and Data science
 
 
 
@@ -229,12 +236,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- CONTACT -->
-## Contact
-
-PADAMATI PRANAV SAI -  pranavsaipadamati@gmail.com
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
