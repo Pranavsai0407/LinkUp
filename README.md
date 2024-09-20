@@ -62,8 +62,6 @@
   - File Download: Users can easily download shared files directly from the chat.
 - Message Management
   - Message History: Users can view their chat history, either in personal chats or group conversations.
-  - Delete Messages: Users can delete their messages from the chat.
-  - Edit Messages: Allow users to edit their previously sent messages.
 - User Profile
   - Profile Page: Displays user details like name, email, and profile picture.
   - Update Profile: Users can update their profile information and upload a new profile picture.
@@ -72,10 +70,6 @@
 - Channels (Group Chats)
   - Create Channels: Users can create group chats (channels) and add members.
   - View Channels: List all channels the user is a part of.
-  - Manage Channels: Admins of the group chat can add or remove members and manage the chat settings.
-- Notifications
-  - Message Notifications: Real-time notifications for incoming messages.
-  - Push Notifications: Web push notifications when the user is offline or inactive in the chat.
 - Real-Time Features
   - Sockets for Real-Time Updates: All chats, typing indicators, and presence status are updated in real-time via Socket.io.
 - Security
