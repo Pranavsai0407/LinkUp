@@ -34,46 +34,46 @@
 
 ## Features
 - User Authentication
- - Registration: Allows users to create an account with email, password, and username.
- - Login: Users can log into their accounts with a valid email and password combination.
- - Logout: Securely log out from the application, invalidating the JWT token.
+  - Registration: Allows users to create an account with email, password, and username.
+  - Login: Users can log into their accounts with a valid email and password combination.
+  - Logout: Securely log out from the application, invalidating the JWT token.
 - Chat Functionality
- - Real-Time Messaging: Instant communication between users via WebSockets.
- - Personal Messaging: Private one-on-one chats between users.
- - Group Chat Support: Multiple users can join and interact in group chats.
- - Emoji Support: Users can add emojis to their messages for expressive conversations.
+  - Real-Time Messaging: Instant communication between users via WebSockets.
+  - Personal Messaging: Private one-on-one chats between users.
+  - Group Chat Support: Multiple users can join and interact in group chats.
+  - Emoji Support: Users can add emojis to their messages for expressive conversations.
 - AI Chatbot Integration
- - Gemini-1.5 Flash API: Users can interact with an AI chatbot for assistance or general conversation.
- - Chatbot Suggestions: Provides suggestions or answers to user queries in real-time.
+  - Gemini-1.5 Flash API: Users can interact with an AI chatbot for assistance or general conversation.
+  - Chatbot Suggestions: Provides suggestions or answers to user queries in real-time.
 - File Handling
- - File Upload: Users can upload and share files and images in chats (via Multer).
- - Profile Picture Upload: Upload a profile picture during registration or update it later.
- - File Download: Users can easily download shared files directly from the chat.
+  - File Upload: Users can upload and share files and images in chats (via Multer).
+  - Profile Picture Upload: Upload a profile picture during registration or update it later.
+  - File Download: Users can easily download shared files directly from the chat.
 - Message Management
- - Message History: Users can view their chat history, either in personal chats or group conversations.
- - Delete Messages: Users can delete their messages from the chat.
- - Edit Messages: Allow users to edit their previously sent messages.
+  - Message History: Users can view their chat history, either in personal chats or group conversations.
+  - Delete Messages: Users can delete their messages from the chat.
+  - Edit Messages: Allow users to edit their previously sent messages.
 - User Profile
- - Profile Page: Displays user details like name, email, and profile picture.
- - Update Profile: Users can update their profile information and upload a new profile picture.
- - Contacts and User List
- - Contact List: Users can view a list of their contacts and start conversations.
+  - Profile Page: Displays user details like name, email, and profile picture.
+  - Update Profile: Users can update their profile information and upload a new profile picture.
+  - Contacts and User List
+  - Contact List: Users can view a list of their contacts and start conversations.
 - Channels (Group Chats)
- - Create Channels: Users can create group chats (channels) and add members.
- - View Channels: List all channels the user is a part of.
- - Manage Channels: Admins of the group chat can add or remove members and manage the chat settings.
+  - Create Channels: Users can create group chats (channels) and add members.
+  - View Channels: List all channels the user is a part of.
+  - Manage Channels: Admins of the group chat can add or remove members and manage the chat settings.
 - Notifications
- - Message Notifications: Real-time notifications for incoming messages.
- - Push Notifications: Web push notifications when the user is offline or inactive in the chat.
+  - Message Notifications: Real-time notifications for incoming messages.
+  - Push Notifications: Web push notifications when the user is offline or inactive in the chat.
 - Real-Time Features
- - Sockets for Real-Time Updates: All chats, typing indicators, and presence status are updated in real-time via Socket.io.
+  - Sockets for Real-Time Updates: All chats, typing indicators, and presence status are updated in real-time via Socket.io.
 - Security
- - JWT Authentication: Protects routes and ensures secure access to resources.
- - Password Hashing: All passwords are hashed before being stored in the database for security.
+  - JWT Authentication: Protects routes and ensures secure access to resources.
+  - Password Hashing: All passwords are hashed before being stored in the database for security.
 - Additional Features
- - Search: Users can search for contacts, group chats, and chat messages.
- - Responsive Design: The entire application is fully responsive and optimized for desktop and mobile devices.
- - Error Handling: Proper error messages for invalid login, registration, or message send failures.
+  - Search: Users can search for contacts, group chats, and chat messages.
+  - Responsive Design: The entire application is fully responsive and optimized for desktop and mobile devices.
+  - Error Handling: Proper error messages for invalid login, registration, or message send failures.
 
 
 
