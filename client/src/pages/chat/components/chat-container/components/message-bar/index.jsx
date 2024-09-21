@@ -124,6 +124,7 @@ const MessageBar = () => {
           placeholder="Enter message"
           value={message}
           onChange={handleMessageChange}
+          onKeyPress={(e) => e.key === "Enter" && handleSendMessage()} // Send on Enter key
         />
         <button
           className="text-neutral-300 focus:border-none focus:outline-none focus:text-white transition-all duration-300"
