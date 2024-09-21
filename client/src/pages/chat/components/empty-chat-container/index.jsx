@@ -2,7 +2,8 @@ import { useState } from "react";
 import LottieAnimation from "@/components/common/lottie-animation";
 // Import Google Generative AI
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineClose } from "react-icons/ai";
+import ChatHeader from "./components/ChatHeader";
 
 const EmptyChatContainer = () => {
   const [isOpen, setIsOpen] = useState(false); // Toggle sidebar open/close
@@ -11,8 +12,8 @@ const EmptyChatContainer = () => {
   const [loading, setLoading] = useState(false); // Loading AI response
 
   // Replace this with your actual API key
-  const API_KEY = import.meta.env.VITE_API_KEY; 
-  
+  const API_KEY = import.meta.env.VITE_API_KEY;
+
   // Initialize Google AI API with the API key
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -58,13 +59,6 @@ const EmptyChatContainer = () => {
       </div>
 
       {/* Floating Chatbot Button */}
-      <div
-        className="fixed bottom-5 right-5 z-50 bg-purple-500 text-white p-3 rounded-full cursor-pointer shadow-lg w-12 h-12 flex items-center justify-center"
-        onClick={toggleChat}
-        style={{ fontSize: "20px", lineHeight: "40px" }} // Button style
-      >
-        {isOpen ? <AiOutlineClose /> : "💬"} {/* Toggle button icons */}
-      </div>
 
       {/* Sliding Sidebar for Chat */}
       <div
@@ -72,39 +66,44 @@ const EmptyChatContainer = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         } z-40 flex flex-col`}
         style={{
-          top: "5px",
-          height: "calc(100vh - 80px)", // Full viewport height minus the button space (80px)
-          width: "850px", // Adjust width if necessary
-          bottom: "80px", // Stops just above the button
+          top: "0px",
+          height: "100vh", // Full viewport height minus the button space (80px)
+          width: "1195.5px",
+          bottom: "0px", // Stops just above the button
         }}
       >
+        <ChatHeader />
         {/* Chat messages display */}
-        <div className="flex-1 p-5 md:bg-[#2b2c34] overflow-y-auto">
+        <div className="flex-1 p-5 md:bg-[#1c1d25] overflow-y-auto flex flex-col">
           {messages.map((message, index) => (
             <div
               key={index}
-              className={`p-2 my-2 rounded-lg ${
+              className={`${
                 message.role === "user"
-                  ? " text-white text-right"
-                  : "md:bg-[#3d3e48] text-white text-left"
-              }`}
+                ? "bg-[#8417ff]/5 text-[#8417ff]/90 border-[#8417ff]/50 text-right self-end" // User messages float right
+                : "bg-[#2a2b33]/50 text-white/80 border-[#ffffff]/20 text-left self-start" // AI messages float left
+              } border inline-block p-4 rounded my-1 max-w-[50%] break-words ml-9`}
+              style={{
+                alignSelf: message.role === "user" ? "flex-end" : "flex-start",
+              }}
             >
               {message.content}
             </div>
           ))}
           {loading && <div className="text-gray-400">Bot is typing...</div>}
         </div>
-
         {/* Input box for message */}
-        <div className="flex md:bg-[#2b2c34]">
-          <input
-            type="text"
-            className="flex-1 p-2 width:370px md:bg-[#65677b] rounded-half focus:outline-none"
-            value={inputMessage}
-            onChange={(e) => setInputMessage(e.target.value)}
-            onKeyPress={(e) => e.key === "Enter" && sendMessage()} // Send on Enter key
-            placeholder="Type your message..."
-          />
+        <div className="h-[10vh] bg-[#1c1d25] flex justify-center items-center px-8 mr-12 gap-5 mb-5">
+          <div className="flex-1 flex bg-[#2a2b33] rounded-md items-center gap-4 pr-8">
+            <input
+              type="text"
+              className="flex-1 p-5 bg-transparent rounded-md focus:border-none focus:outline-none"
+              value={inputMessage}
+              onChange={(e) => setInputMessage(e.target.value)}
+              onKeyPress={(e) => e.key === "Enter" && sendMessage()} // Send on Enter key
+              placeholder="Type your message..."
+            />
+          </div>
           <button
             className="bg-purple-500 text-white p-2 rounded-r-lg"
             onClick={sendMessage}
@@ -113,8 +112,28 @@ const EmptyChatContainer = () => {
           </button>
         </div>
       </div>
+
+      <div
+        className="fixed bottom-5 right-5 z-50 bg-purple-500 text-white p-3 rounded-full cursor-pointer shadow-lg w-12 h-12 flex items-center justify-center"
+        onClick={toggleChat}
+        style={{ fontSize: "20px", lineHeight: "40px" }} // Button style
+      >
+        {isOpen ? <AiOutlineClose /> : "💬"} {/* Toggle button icons */}
+      </div>
     </div>
   );
 };
 
 export default EmptyChatContainer;
+
+/*value={inputMessage}
+            onChange={(e) => setInputMessage(e.target.value)}
+            onKeyPress={(e) => e.key === "Enter" && sendMessage()} // Send on Enter key
+            placeholder="Type your message..."*/
+
+/**/
+
+/*value={inputMessage}
+              onChange={(e) => setInputMessage(e.target.value)}
+              onKeyPress={(e) => e.key === "Enter" && sendMessage()} // Send on Enter key
+              placeholder="Type your message..."*/
