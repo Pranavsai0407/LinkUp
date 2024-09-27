@@ -7,24 +7,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
-
-
-<!-- CONTACT -->
-## Contact
-
-- Name: 
-  - PADAMATI PRANAV SAI
-- Email:
-  - 2201ai49_padamati@iitp.ac.in
-- University:
-  - IIT Patna
-- Dept:
-  - Artificial Intelligence and Data science
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 
@@ -237,6 +219,17 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTACT -->
+## Contact
+
+- Name: 
+  - PADAMATI PRANAV SAI
+- Email:
+  - 2201ai49_padamati@iitp.ac.in
+- University:
+  - IIT Patna
+- Dept:
+  - Artificial Intelligence and Data science
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -278,4 +271,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
+
+

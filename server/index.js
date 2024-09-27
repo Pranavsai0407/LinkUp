@@ -12,8 +12,8 @@ import channelRoutes from "./routes/ChannelRoutes.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
-const databaseURL = process.env.DATABSE_URL;
+const port = process.env.PORT; // Default to 5000 for local development
+const databaseURL = process.env.DATABASE_URL; // Ensure this is set correctly
 
 app.use(
   cors({
@@ -34,22 +34,23 @@ app.use("/api/contacts", contactsRoutes);
 app.use("/api/messages", messagesRoutes);
 app.use("/api/channel", channelRoutes);
 
-
-const server = app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-
-});
-
 app.get("/", (req, res) => {
   res.send("Hello world");
 });
 
+// Start server
+const server = app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`); // For local development
+});
+
+// Setup socket connection
 setupSocket(server);
 
+// Connect to MongoDB
 mongoose
   .connect(databaseURL)
   .then(() => {
-    console.log("DB Connetion Successfull");
+    console.log("DB Connection Successful");
   })
   .catch((err) => {
     console.log(err.message);
