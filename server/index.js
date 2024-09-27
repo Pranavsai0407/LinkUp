@@ -12,7 +12,7 @@ import channelRoutes from "./routes/ChannelRoutes.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5000; // Default to 5000 for local development
+const port = process.env.PORT; // Default to 5000 for local development
 const databaseURL = process.env.DATABASE_URL; // Ensure this is set correctly
 
 app.use(
