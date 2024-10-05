@@ -164,7 +164,6 @@ Make sure you have the following software installed on your local machine:
     Create a `.env` file in the `client` directory and add your configuration details:
     ```env
     VITE_SERVER_URL="http://localhost:5000"
-    VITE_SOCKET_URL="http://localhost:3001"
     VITE_API_KEY="Your-Google-AI-API-KEY"
     ```
 
