@@ -19,7 +19,9 @@ app.use(
   cors({
     origin: [process.env.ORIGIN,'https://link-up-client-1v6jybhf9-pranavsai0407s-projects.vercel.app'],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    credentials: true,
+    credentials: true, // Allow credentials (cookies)
+    allowedHeaders: ["Content-Type", "Authorization"], // Make sure headers are allowed
+    preflightContinue: true, // Ensure preflight requests are handled
   })
 );
 
