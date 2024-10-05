@@ -17,17 +17,12 @@ const databaseURL = process.env.DATABASE_URL; // Ensure this is set correctly
 
 app.use(
   cors({
-    origin: "*",
+    origin: [process.env.ORIGIN,'https://link-up-client-nine.vercel.app'],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    credentials: true, // Allow credentials (cookies)
-    allowedHeaders: ["Content-Type", "Authorization"], // Make sure headers are allowed
-    preflightContinue: true, // Ensure preflight requests are handled
+    credentials: true,
   })
 );
 
-console.log("CORS is set for all origins temporarily.");
-
-app.options('*', cors()); // Allow preflight requests
 app.use("/uploads/profiles", express.static("uploads/profiles"));
 app.use("/uploads/files", express.static("uploads/files"));
 
