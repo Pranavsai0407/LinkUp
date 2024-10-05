@@ -17,7 +17,7 @@ const databaseURL = process.env.DATABASE_URL; // Ensure this is set correctly
 
 app.use(
   cors({
-    origin: [process.env.ORIGIN,'https://link-up-client-1v6jybhf9-pranavsai0407s-projects.vercel.app'],
+    origin: [process.env.ORIGIN,'https://link-up-client-nine.vercel.app/auth'],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true, // Allow credentials (cookies)
     allowedHeaders: ["Content-Type", "Authorization"], // Make sure headers are allowed
