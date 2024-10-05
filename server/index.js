@@ -12,17 +12,18 @@ import channelRoutes from "./routes/ChannelRoutes.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT | 5000; // Default to 5000 for local development
+const port = process.env.PORT || 5000; // Default to 5000 for local development
 const databaseURL = process.env.DATABASE_URL; // Ensure this is set correctly
 
 app.use(
   cors({
-    origin: process.env.ORIGIN,
+    origin: [process.env.ORIGIN,'https://link-up-client-1v6jybhf9-pranavsai0407s-projects.vercel.app'],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
 );
 
+app.options('*', cors()); // Allow preflight requests
 app.use("/uploads/profiles", express.static("uploads/profiles"));
 app.use("/uploads/files", express.static("uploads/files"));
 
