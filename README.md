@@ -84,6 +84,27 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Once the installation is complete, you can start using the platform by navigating to `http://localhost:5173` in your web browser.
+
+- **Login**: Login to your account.
+![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/login_page.png)
+- **Register Page**: Create a new account.
+![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/register_page.png)
+- **Homepage**:
+![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/home_page_top.png)
+![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/home_page_bottom.png)
+- **ProblemSet(admin)**: Page Listing all the available problems.
+![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/problem_set_admin.png)
+- **ProblemDescription**: Page Describing the Problem.
+![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/problem_page_top.png)
+![Register](https://github.com/Pranavsai0407/Online-Judge/blob/main/images/Online-judge-images/problem_page_bottom.png)
+- **Submissions**: Page Listing all user submissions.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
