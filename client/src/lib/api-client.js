@@ -6,6 +6,8 @@ const apiClient = axios.create({
   baseURL: HOST,
 });
 
+console.log(`Host: ${HOST}`);
+
 apiClient.interceptors.request.use(
   (config) => {
     const token = Cookies.get("access-token");

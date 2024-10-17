@@ -12,12 +12,12 @@ import channelRoutes from "./routes/ChannelRoutes.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5000; // Default to 5000 for local development
+const port = process.env.PORT; // Default to 5000 for local development
 const databaseURL = process.env.DATABASE_URL; // Ensure this is set correctly
 
 app.use(
   cors({
-    origin: [process.env.ORIGIN,'https://link-up-client-nine.vercel.app'],
+    origin: process.env.ORIGIN,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 
 // Start server
 const server = app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`); // For local development
+  console.log(`Server is running at port ${port}`); // For local development
 });
 
 // Setup socket connection
