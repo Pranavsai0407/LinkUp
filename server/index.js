@@ -35,7 +35,7 @@ app.use("/api/messages", messagesRoutes);
 app.use("/api/channel", channelRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Hello world");
+  return res.send("Hello world");
 });
 
 // Start server
