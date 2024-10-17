@@ -84,6 +84,30 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Once the installation is complete, you can start using the platform by navigating to `http://localhost:5173` in your web browser.
+
+- **Login**: Login to your account.
+![Register](https://github.com/Pranavsai0407/LinkUp/blob/master/LinkUp-Images/LinkUp-login.png)
+- **Register Page**: Create a new account.
+![Register](https://github.com/Pranavsai0407/LinkUp/blob/master/LinkUp-Images/LinkUp-register.png)
+- **Homepage**:
+![Register](https://github.com/Pranavsai0407/LinkUp/blob/master/LinkUp-Images/LinkUp-home.png)
+- **Chatting-Page**:.
+![Register](https://github.com/Pranavsai0407/LinkUp/blob/master/LinkUp-Images/LinkUp-chatpage.png)
+- **Search Contact**:
+![Register](https://github.com/Pranavsai0407/LinkUp/blob/master/LinkUp-Images/LinkUp-searchcontact.png)
+- **Create Group**:
+![Register](https://github.com/Pranavsai0407/LinkUp/blob/master/LinkUp-Images/LinUp-Creategroup.png)
+- **Profile settings**:
+![Register](https://github.com/Pranavsai0407/LinkUp/blob/master/LinkUp-Images/LinkUp-profile-settings.png)
+- **Chat-Bot**:
+![Register](https://github.com/Pranavsai0407/LinkUp/blob/master/LinkUp-Images/LinkUp-chatbot.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -140,7 +164,6 @@ Make sure you have the following software installed on your local machine:
     Create a `.env` file in the `client` directory and add your configuration details:
     ```env
     VITE_SERVER_URL="http://localhost:5000"
-    VITE_SOCKET_URL="http://localhost:3001"
     VITE_API_KEY="Your-Google-AI-API-KEY"
     ```
 
