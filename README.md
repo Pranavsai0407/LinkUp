@@ -14,7 +14,7 @@
 ## Table of Contents
 - [Features](#features)
 - [About Project](#about-the-project)
-- [Demo]
+- [Demo](#Demo)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Prerequisites](#Prerequisites)
