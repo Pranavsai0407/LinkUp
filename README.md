@@ -63,8 +63,10 @@
   - Responsive Design: The entire application is fully responsive and optimized for desktop and mobile devices.
   - Error Handling: Proper error messages for invalid login, registration, or message send failures.
 
-### Demo
-![Click Here](https://www.loom.com/share/c7d730c34a1841dd9f79b15db1788b83?sid=25cdca10-b7d6-4bec-8cac-f1a78a941502)
+## Demo Video
+
+[Watch the demo video](https://www.loom.com/share/c7d730c34a1841dd9f79b15db1788b83?sid=25cdca10-b7d6-4bec-8cac-f1a78a941502)
+
 
 ### Technologies Used
 
